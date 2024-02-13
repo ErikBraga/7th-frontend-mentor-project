@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #F6D050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CONTAINER */
+#container{
+    position: relative;
+    width: 378px;
+    height: 549px;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 10px 10px ;
+}
+
+#container header img{
+    margin-top: 21px;
+    border-radius: 18px;
+}
+
+
+/* HEADER */
+#header-div{
+    margin-top: 20px;
+}
+
+#p1{
+    width: 80px;
+    padding: 5px 8px;
+    background-color: #F6D050;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+#p2{
+    width: 168px;
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+/* MAIN */
+#container main h1{
+    font-size: 25px;
+    width: 336px;
+}
+
+#container main h1:hover{
+    cursor: pointer;
+    color: #F6D050;
+}
+
+#container main p{
+    margin-top: 15px;
+    width: 336px;
+    color: grey;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+footer img{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 40px;
+    cursor: pointer;
+}
+
+footer p{
+    position: absolute;
+    left: 70px;
+    top: 30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* ATTRIBUTION */
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: -40px;
+}
+
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 360px) and (max-width: 420px){
+    /* CONTAINER */
+    #container header img{
+        width: 280px;
+        margin-top: 20px;
+    }
+
+    #container{
+        width: 328px;
+        height: 549px;
+    }
+
+    /* HEADER */
+    #p2{
+        font-size: 13px;
+    }
+
+    /* MAIN */
+    main{
+        position: relative;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 15px;
+    }
+
+    #container main h1{
+        font-size: 22px;
+        width: 100%;
+    }
+
+    #container main p{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    /* FOOTER*/
+    footer img{
+        top: 30px;
+    }
+    
+    footer p{
+        top: 40px;
+    }
+}
